@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>13회 JCO Conference 발표 자료 - AngularJS 시작하세요</title>
+
+		<meta name="description" content="13회 JCO Conference 발표 자료 - AngularJS 시작하세요">
+		<meta name="author" content="JEADO KO">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/jco.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<br>
+					<br>
+					<h2>AngularJS 시작하세요</h2>
+					<h3>간단 명료 웹 어플리케이션 개발!</h3>
+					<br>
+					<p>
+						<small>발표자 : <a href="http://hakim.se">고재도</a> / haibane84@gmail.com</small>
+					</p>
+				</section>
+
+				<section data-state="normal">
+					<h2>고재도</h2>
+					<p>
+						Java & JavaScript Framework 개발자이며 지식 공유를 통해 늘 끊임없이 배우고자 노력합니다. 
+					</p>
+					<p style="padding-bottom: 10px;">
+						<ul>
+							<li>대우정보시스템 프레임워크 센터</li>
+							<small>Java&JavaScript Framework R&D</small>
+							<li>Korea AngularJS User Group 운영자</li>
+							<small>http://www.angularjs.co.kr/</small>
+							<li>Korea Sencha User Group 활동</li>
+							<li>Undefine:D 커뮤니티 운영진</li>
+							<small>http://www.facebook.com/groups/html5jsstudy/</small>
+						</ul>
+					</p>
+					<p style="padding-top: 10px;">
+						<small style="text-align :right; display:block;">haibane84@gmail.com</small>
+						<small style="text-align :right; display:block;">http://www.facebook.com/jeado.ko</small>
+					</p>
+				</section>
+
+				<section data-state="normal">
+					<section>
+						<h2></h2>
+						<p>
+						</p>
+					</section>	
+				</section>
+
+				<section>
+					<h1>QnA</h1>
+					<h3>감사합니다.</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
