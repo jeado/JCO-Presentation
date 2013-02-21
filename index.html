@@ -170,27 +170,25 @@
 					<h4 style="text-align:left;">예제</h4>
 					<div style="text-align:left; padding-left: 10px;">
 						<ul >
-							<li>{{ 1+2 }}</li>
-							<li>{{ 3*10 | currency }}</li>
-							<li>{{ user.name }}</li>
+							<li style="font-size:30px;">{{ 1+2 }}</li>
+							<li style="font-size:30px;">{{ 3*10 | currency }}</li>
+							<li style="font-size:30px;">{{ user.name }}</li>
 						</ul>
 					</div>
-					<br>
-					<h4 style="text-align:left;">특징</h4>
+					<h4 style="text-align:left; padding-top: 20px;">특징</h4>
 					<div style="text-align:left; padding-left: 10px;">
 						<ul >
-							<li>Scope 객체 기준으로 속성들을 검사한다.
+							<li style="font-size:30px;">Scope 객체 기준으로 속성들을 검사한다.
 								<br><small>(window 로부터가 아니라…)</small></li>
-							<li>Null 에러를 무시한다. 
+							<li style="font-size:30px;">Null 에러를 무시한다. 
 								<br><small>({{a.b.c}} vs {{((a||{}).b||{}).c}})</small></li>
-							<li>조건문은 올 수 없다.</li>
-							<li>필터들과 함께 쓰인다.
+							<li style="font-size:30px;">조건문은 올 수 없다.</li>
+							<li style="font-size:30px;">필터들과 함께 쓰인다.
 								<br>
 								<small>({{ 3*10 | currency }})</small>
 							</li>
 						</ul>
 					</div>
-					<br>
 					<p>Angular가 재대로 실행 되지 않을 경우 브라우저에 {{ 표현식 }}이 그대로 보이게 된다.</p>				
 				</section>
 				<section data-state="normal">
@@ -247,6 +245,12 @@
 						</p>					
 					</section>
 					<section>
+						<h3>강력한 의존관계의 JavaScript 예제</h3>
+						<p>이거 수정해야 되네 -_-</p>
+						<img src="img/11-2.png" alt="strong dependancy javascript example 1">
+						<img src="img/11-3.png" alt="strong dependancy javascript example 2">
+					</section>
+					<section>
 						<p>의존관계 주입(DI)이란 다음과 같은 세 가지 조건을 충족하는 작업을 말한다.</p>
 						<br>
 						<ul>
@@ -264,12 +268,6 @@
 						<p style="text-align : right;">
 							<small >(출처 : 토비의 스프링 3; 이일민)</small>
 						</p>
-					</section>
-					<section>
-						<h3>강력한 의존관계의 JavaScript 예제</h3>
-						<p>이거 수정해야 되네 -_-</p>
-						<img src="img/11-2.png" alt="strong dependancy javascript example 1">
-						<img src="img/11-3.png" alt="strong dependancy javascript example 2">				
 					</section>
 					<section>
 						<ul>
