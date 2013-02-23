@@ -89,15 +89,8 @@
 
 				<section data-state="normal">
 					<section>
-						<h3>하지만 웹 어플리케이션 개발은 개고생</h3>
-						<img src="img/3-1.png" alt="웹 어프리케이션 개발은 개고생">
-					</section>
-					<section>
 						<h3>웹 어플리케이션 개발 시 고려할 점</h3>
-						<img src="img/3-2.png" alt="Web Applicaiton개발시 고려할 점">
-					</section>
-					<section>
-						<img src="img/3-3.png" alt="Web Applicaiton개발시 고려할 점">
+						<img src="img/3-1.png" alt="Web Applicaiton개발시 고려할 점">
 					</section>	
 				</section>
 
@@ -124,8 +117,8 @@
 							<li>MVW</li>
 							<li>Template</li>
 							<li>Directive를 통한 컴포넌트 재사용</li>
-							<li>의존성 주입 (DI)</li>
 							<li>E2E 테스팅 및 Mocks</li>
+							<li>의존성 주입 (DI)</li>
 							<li>...</li>
 						</ul>
 					</p>
@@ -149,9 +142,17 @@
 						<img src="img/6-2.png" alt="tow way data binding">
 					</section>
 					<section>
-						<h2>jQuery와 AngularJS의 비교</h2>
-						<br>
-						<h1>DEMO</h1>	
+						<h2>jQuery와 AngularJS의</h2>
+						<h2>데이터 바인딩 구현 비교</h2>
+					</section>
+					<section>
+						<h3>jQuery Version</h3>
+						<img src="img/6-3.png" alt="">
+					</section>
+					<section>
+						<h3>Angular Version</h3>
+						<img src="img/6-4.png" alt="">
+						<p>ng-app, ng-model, ng-click</p>
 					</section>
 				</section>
 				<section data-state="normal">
@@ -189,7 +190,7 @@
 							</li>
 						</ul>
 					</div>
-					<p>Angular가 재대로 실행 되지 않을 경우 브라우저에 {{ 표현식 }}이 그대로 보이게 된다.</p>				
+					<p>Angular가 제대로 실행 되지 않을 경우 브라우저에 {{ 표현식 }}이 그대로 보이게 된다.</p>				
 				</section>
 				<section data-state="normal">
 					<section>
@@ -218,15 +219,89 @@
 						<img src="img/9-5.png" alt="model view controller">
 					</section>
 				</section>
+
+				<section data-state="normal">
+					<section>
+						<h2>Directive</h2>
+					</section>
+					<section>
+						<p>Directive를 통하여 새로운 HTML 문법을 <br> 브라우져들에게 가르칠 수 있다.</p>
+						<img src="img/12-5.png" alt="directive example 5">
+					</section>
+					<section>
+						<h2>Built-in Directive</h2>
+						<p>a, form, input, <span class="pink">ngApp</span>, ngBind, ngChange, ngClass, <span class="pink">ngClick</span>, <span class="pink">ngController</span>, ngCloak, ngDbclick, ngDisabled, ngHide, ngHref, ngInclude, <span class="pink">ngModel</span>, ngMousedown, <span class="pink">ngRepeat</span>, ngView, ...</p>
+					</section>
+					<section>
+						<h2>Custom Directive</h2>
+						<img src="img/12-1.png" alt="directive example 1">
+					</section>
+					<section>
+						<h2>Custom Directive</h2>
+						<img src="img/12-2.png" alt="directive example 2">
+					</section>
+					<section>
+						<h2>Custom Directive</h2>
+						<img src="img/12-3.png" alt="directive example 3">
+					</section>
+					<section>
+						<h2>Directive 사용 DEMO</h2>
+					</section>
+				</section>
+
 				<section data-state="normal">
 					<section>
 						<h2>Module</h2>
 						<img src="img/10-1.png" alt="module">
 					</section>
 					<section>
-						<img src="img/10-2.png" alt="module by code">
+						<pre style="font-size:25px;"><code>var userModule = angular.module('userMnge',[]);</code><code class="fragment">
+userModule.controller('mainCtrl',function($scope){
+ ....
+});</code><code class="fragment">
+userModule.directive('unicorn',function(){
+ ....
+});</code><code class="fragment">
+userModule.filter("unicorn",function(){
+ ....
+});</code><code class="fragment">
+userModule.factory("unicorn",function(){
+ ....
+});</code></pre>
+					</section>
+					<section>
+						<pre style="font-size:43px;"><code>&lt;html ng-app=&quot;userMnge&quot;&gt;</code></pre>
+					</section>
+					<section>
+						<pre style="font-size:33px;"><code>var userModule = angular.module('userMnge',['ngResource',...]);</code></pre>
 					</section>
 				</section>
+				<section data-state="normal">
+					<section>
+						<h3>Testing 그리고 Angular</h3>
+					</section>
+					<section>
+						<h3>End-to-end Test</h3>
+						<p>Test Scenario DSL 제공</p>
+						<img src="img/13-2.png" alt="unit test code">
+					</section>
+					<section>
+						<h3>Unit Test</h3>
+						<p>
+							<img src="img/13-1.png" alt="unit test code">
+						</p>
+						<ul>
+							<li>inject</li>
+							<li>module</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/13-3.png" alt="testacular">
+					</section>
+					<section>
+						<h2>Testing DEMO</h2>
+					</section>
+				</section>				
 				<section data-state="normal">
 					<section>
 						<h2>의존관계 주입</h2>
@@ -245,30 +320,12 @@
 						</p>					
 					</section>
 					<section>
-						<h3>강력한 의존관계의 JavaScript 예제</h3>
+						<h3>강하게 결합된 경우</h3>
 						<img src="img/11-2.png" alt="strong dependency javascript example 1">
 						<img src="img/11-3.png" alt="strong dependency javascript example 2">
 					</section>
 					<section>
-						<h3>강력한 의존관계의 JAVA 예제</h3>
-						<img src="img/11-1.png" alt="strong dependency java example">
-						<p style="text-align : right;">
-							<small >(출처 : 토비의 스프링 3; 이일민)</small>
-						</p>
-					</section>
-					<section>
-						<p>의존관계 주입(DI)이란 다음과 같은 세 가지 조건을 충족하는 작업을 말한다.</p>
-						<br>
-						<ul>
-							<li style="font-size: 30px;">클래스 모델이나 코드에는 런타임 시점의 의존관계가 드러나지 않는다. 그러기 위해서는 인터페이스에만 의존하고 있어야 한다.</li>
-							<li style="font-size: 30px;">런타임 시점의 의존 관계는 컨테이너나 팩토리 같은 제3의 존재가 결정한다.</li>
-							<li style="font-size: 30px;">의존관계는 사용할 오브젝트에 대한 레퍼런스를 외부에서 주입 해줌으로써 만들어진다.</li>
-						</ul>
-						<p style="text-align : right;">
-							<small >(출처 : 토비의 스프링 3; 이일민)</small>
-						</p>
-					</section>
-					<section>
+						<h3>느슨하게 결합된 경우</h3>
 						<img src="img/11-5.png" alt="">
 					</section>
 					<section>
@@ -284,73 +341,6 @@
 							</li>
 						</ul>
 						<img src="img/11-4.png" alt="">
-					</section>
-				</section>
-				<section data-state="normal">
-					<section>
-						<h2>Directive</h2>
-					</section>
-					<section>
-						<img src="img/12-1.png" alt="directive example 1">
-					</section>
-					<section>
-						<img src="img/12-2.png" alt="directive example 2">
-					</section>
-					<section>
-						<img src="img/12-3.png" alt="directive example 3">
-					</section>
-					<section>
-						<h2>DEMO</h2>
-						<p>http://btford.github.com/angular-unicorn-directive/
-						적용</p>	
-					</section>
-					<section>
-						<p>Directive를 통하여 새로운 HTML 문법을 <br> 브라우져들에게 가르칠 수 있다.</p>
-						<img src="img/12-5.png" alt="directive example 5">
-					</section>
-				</section>
-				<section data-state="normal">
-					<section>
-						<h3>Testing 그리고 Angular</h3>
-					</section>
-					<section>
-						<h3>Unit Test</h3>
-						<img src="img/13-1.png" alt="unit test code">
-					</section>
-					<section>
-						<h3>E2E Test</h3>
-						<img src="img/13-2.png" alt="unit test code">
-					</section>
-					<section>
-						<h3>참고사항</h3>
-						<ul>
-							<li style="font-size: 30px;">
-								별도의 JavaScript Test Framework를 요구하지 않으나 Jasmine사용을 권장한다.
-							</li>
-							<li style="font-size: 30px;">
-								Jasmine용 Mock과 시나리오 테스트용 DSL을 제공한다
-							</li>
-						</ul>
-					</section>
-					<section>
-						<img src="img/13-3.png" alt="testacular">
-					</section>
-				</section>
-				<section data-state="normal">
-					<section>
-						<p>그러면 왜 AngularJS를	적용해야 할까요?</p>
-					</section>
-					<section>
-						<h3>Google이 만들었다.</h3>
-					</section>
-					<section>
-						<h3>End-to-end Solution</h3>
-					</section>
-					<section>
-						<h3>디자이너 친화적이다.</h3>
-					</section>
-					<section>
-						<h3>HTML을 확장할 수 있다.</h3>
 					</section>
 				</section>
 				<section data-state="normal">

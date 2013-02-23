@@ -41,6 +41,17 @@
   background-color: #2b2b2b;
 }
 
+.reveal span.pink{
+  color: white;
+  background: #ff5e99;
+  text-shadow: none;
+}
+
+.reveal pre {
+  border :none;
+  box-shadow: none;
+}
+
 .reveal .slides > section, .reveal .slides > section > section {
   padding-top: 0px;
 }
